@@ -1,0 +1,13 @@
+.header__theme {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__theme span {
+    text-transform: capitalize;
+    margin-left: 5px;
+    color: var(--colors-text);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+}

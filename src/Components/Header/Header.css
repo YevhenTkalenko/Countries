@@ -1,0 +1,4 @@
+.header__container {
+    box-shadow: var(--shadow);
+    background-color: var(--color-bg);
+}

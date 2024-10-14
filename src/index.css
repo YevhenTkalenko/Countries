@@ -1,13 +1,78 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+	--family: "Nunito Sans", sans-serif;
+	--fs-sm: 14px;
+	--fs-md: 16px;
+	--fw-light: 300;
+	--fw-normal: 600;
+	--fw-bold: 800;
+	--radii: 0.5rem;
+
+}
+
+body[data-theme="dark"] {
+	--colors-text: hsl(0, 0%, 100%);
+	--color-bg: hsl(207, 26%, 17%);
+	--colors-ui-base: hsl(209, 23%, 22%);
+	--shadow: rgba(245, 245, 245, 0.2 ) 0 0 8px;
+}
+
+body[data-theme="light"] {
+	--colors-text: hsl(200, 15%, 8%);
+	--color-bg: hsl(0, 0%, 98%);
+	--colors-ui-base: hsl(0, 0%, 100%);
+	--shadow: rgba(149, 157, 165, 0.2 ) 0 8px 24px;
+}
+
+
+body {
+	font-family: var(--family);
+	box-sizing: border-box;
+	color: var(--colors-text);
+	font-weight: var(--fw-normal);
+	background-color: var(--color-bg);
 }

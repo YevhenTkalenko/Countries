@@ -1,0 +1,32 @@
+.card__img {
+    height: 170px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: var(--shadow);
+}
+
+.card__body {
+    padding: 1rem 1.5rem 2rem;
+}
+
+.card__title {
+    font-weight: var(--fw-bold);
+    font-family: var(--family);
+    font-size: var(--fs-md);
+}
+
+.card__list {
+    padding: 1rem 0 0 ;
+}
+
+.card__item {
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+    font-weight: var(--fw-light);
+}
+
+.card__item p span{
+    font-weight: var(--fw-bold);
+}
